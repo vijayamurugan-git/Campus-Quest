@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7ff;
+    color: #192b59;
+}
+
+header {
+    background-color: rgba(195, 195, 228, 0.555);
+    padding: 20px;
+}
+
+header h1,
+header p {
+    margin: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#colorBtn,
+#addBtn {
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 7px;
+}
+
+#colorBtn:hover,
+#addBtn:hover {
+    background-color: rgba(74, 74, 230, 0.685);
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.add-area {
+    display: flex;
+    gap: 10px;
+}
+
+#missionInput {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cddaf0;
+    border-radius: 7px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.stat {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.total {
+    background-color: #e0edff;
+}
+
+.completed-stat {
+    background-color: #e0f8e6;
+    color: hsla(160, 85%, 29%, 0.74);
+}
+
+.pending-stat {
+    background-color: #fff0df;
+    color: rgb(240, 174, 185);
+}
+
+.stat h3 {
+    margin: 5px;
+}
+
+#missionList {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+#missionList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #dce5f5;
+    border-radius: 8px;
+}
+
+.mission-text {
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    color: green;
+    text-decoration: line-through;
+    background-color: #e4f8e8 !important;
+}
+
+.delete-btn {
+    background-color: #ffe0e8;
+    color: #d52f55;
+    border: none;
+    border-radius: 6px;
+}
+
+#message {
+    padding: 12px;
+    background-color: #e6faf4;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .add-area {
+        flex-direction: column;
+    }
+}
